@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+/* footer */
+footer {
+  height: 50px;
+  background-color: #aaaaaa;
+}
+
+/* main */
+.container {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.item-box {
+  width: 300px;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 10px;
+}
+
+.item-box:nth-child(1) {
+  margin-right: 30px;
+}
+
+.item-box:nth-child(2) {
+  margin-right: 30px;
+}
+
+.flow1 {
+  background-image: url(img/flow01.png);
+}
+
+.flow2 {
+  background-image: url(img/flow02.png);
+}
+
+.flow3 {
+  background-image: url(img/flow03.png);
+}
+
+.item-img {
+  height: 150px;
+  background-position: bottom;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.item-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: white;
+}
+
+.text-title {
+  margin-bottom: 5px;
+}
+
+/* レスポンシブ対応　*/
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .item-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .item-box:nth-child(1) {
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+
+  .item-box:nth-child(2) {
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+}
